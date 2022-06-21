@@ -1,4 +1,4 @@
-package com.example.kakao_app
+package com.example.kakao_app.kakaoAPI
 
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP
@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.example.kakao_app.MainActivity
+import com.example.kakao_app.R
 import com.kakao.sdk.user.UserApiClient
 
 class SecondActivity : AppCompatActivity() {

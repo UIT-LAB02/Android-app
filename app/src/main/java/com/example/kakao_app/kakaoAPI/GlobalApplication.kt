@@ -1,4 +1,4 @@
-package com.example.kakao_app
+package com.example.kakao_app.kakaoAPI
 
 import android.app.Application
 import com.kakao.sdk.common.KakaoSdk
