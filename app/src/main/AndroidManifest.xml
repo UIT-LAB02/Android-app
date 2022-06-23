@@ -10,9 +10,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_waggle_01"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_waggle_01_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kakao_App"
         tools:targetApi="31" >
@@ -33,7 +33,7 @@
 
                 <data
                     android:host="oauth"
-                    android:scheme="kakaoa81f58772bd67ab645f65c8b16bc07e3" />
+                    android:scheme="kakaod906dbee734d0e10d04ee4116fd7a0d7" />
             </intent-filter>
         </activity>
         <activity
