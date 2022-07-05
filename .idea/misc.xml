@@ -7,7 +7,7 @@
         <entry key="app/src/main/res/layout/activity_login_client.xml" value="0.30570652173913043" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.38958333333333334" />
-        <entry key="app/src/main/res/layout/fragment_guest_book.xml" value="0.41510416666666666" />
+        <entry key="app/src/main/res/layout/fragment_guest_book.xml" value="0.1" />
         <entry key="app/src/main/res/layout/secondactivity.xml" value="0.22418478260869565" />
       </map>
     </option>
@@ -17,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>
