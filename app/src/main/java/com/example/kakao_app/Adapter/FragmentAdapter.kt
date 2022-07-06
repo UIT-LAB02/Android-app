@@ -10,7 +10,7 @@ import com.example.kakao_app.TrapLog.TrapFragment
 import com.example.kakao_app.With.WithFragment
 
 class FragmentAdapter(fa: FragmentActivity) : FragmentStateAdapter(fa) {
-    private val NUM_PAGES = 6
+    private val NUM_PAGES = 5
 
     override fun getItemCount(): Int = NUM_PAGES
 
