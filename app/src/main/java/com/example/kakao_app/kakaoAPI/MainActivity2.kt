@@ -82,5 +82,6 @@ class MainActivity2 : AppCompatActivity() {
                 UserApiClient.instance.loginWithKakaoAccount(this, callback = callback)
             }
         }
+
     }
 }
