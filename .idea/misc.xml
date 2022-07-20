@@ -11,11 +11,13 @@
         <entry key="app/src/main/res/layout/activity_image_click_actitivty.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/activity_login_client.xml" value="0.30570652173913043" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.38958333333333334" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main3.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/activity_search2.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/dialog_profile.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/fragment_guest_book.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_trap.xml" value="0.19630192502532928" />
         <entry key="app/src/main/res/layout/lank_item_recycler.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/ped_item_view.xml" value="0.2734375" />
         <entry key="app/src/main/res/layout/search_item_recycler.xml" value="0.2734375" />

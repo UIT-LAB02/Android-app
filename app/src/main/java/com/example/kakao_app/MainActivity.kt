@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         viewPager2.apply {
             adapter = FragmentAdapter(context as FragmentActivity)
+            // 사용자 스와이프에 화면 전환은 불가능하게 만듬 -> 맵을 이동할 때 발생하는 화면 전환 문제
+            isUserInputEnabled = false
         }
 
         TabLayoutMediator(tabLayout, viewPager2) {tab, position ->

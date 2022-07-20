@@ -1,16 +1,31 @@
 package com.example.kakao_app.kakaoAPI
 
+import android.Manifest
+import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import androidx.core.content.PackageManagerCompat.LOG_TAG
+import com.example.kakao_app.MainActivity
 import com.example.kakao_app.R
 import com.kakao.sdk.auth.model.OAuthToken
 import com.kakao.sdk.common.model.AuthErrorCause
 import com.kakao.sdk.user.UserApiClient
 
-class MainActivity2 : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity(){
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -26,11 +41,6 @@ class MainActivity2 : AppCompatActivity() {
                 finish()
             }
         }
-
-//        Hash 키 값
-//        val keyHash = Utility.getKeyHash(this)
-//        Log.d("Hash", keyHash)
-
 
         val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
             if (error != null) {
@@ -52,7 +62,11 @@ class MainActivity2 : AppCompatActivity() {
                         Toast.makeText(this, "유효하지 않은 scope ID", Toast.LENGTH_SHORT).show()
                     }
                     error.toString() == AuthErrorCause.Misconfigured.toString() -> {
-                        Toast.makeText(this, "설정이 올바르지 않음(android key hash)", Toast.LENGTH_SHORT)
+                        Toast.makeText(
+                            this,
+                            "설정이 올바르지 않음(android key hash)",
+                            Toast.LENGTH_SHORT
+                        )
                             .show()
                     }
                     error.toString() == AuthErrorCause.ServerError.toString() -> {
@@ -76,12 +90,12 @@ class MainActivity2 : AppCompatActivity() {
         val kakao_login_button = findViewById<ImageButton>(R.id.kakao_login_button) // 로그인 버튼
 
         kakao_login_button.setOnClickListener {
-            if(UserApiClient.instance.isKakaoTalkLoginAvailable(this)){
+            if (UserApiClient.instance.isKakaoTalkLoginAvailable(this)) {
                 UserApiClient.instance.loginWithKakaoAccount(this, callback = callback)
             } else {
                 UserApiClient.instance.loginWithKakaoAccount(this, callback = callback)
             }
         }
 
-    }
+        }
 }
