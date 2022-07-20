@@ -31,6 +31,7 @@ class TrapFragment : Fragment() {
     lateinit var mainActivity: MainActivity
     lateinit var mapView : MapView
     lateinit var  mapViewContainer: ViewGroup
+    lateinit var button : Button
 
 
     override fun onCreateView(
@@ -39,18 +40,19 @@ class TrapFragment : Fragment() {
     ): View? {
 
         var view = inflater.inflate(R.layout.fragment_trap, container, false)
+        // 초기화는 뷰 쪽에서 해줘야됨 이유는 찾아봐야함
+        mainActivity = context as MainActivity
+        mapViewContainer = view.findViewById(R.id.map_view) as ViewGroup
+        button = view.findViewById(R.id.button4)
+
 
         return view
     }
 
     override fun onStart() {
         super.onStart()
-        mainActivity = context as MainActivity
-        mapViewContainer = mainActivity.findViewById(R.id.map_view) as ViewGroup
+//        mainActivity = context as MainActivity
 
-
-
-        val button: Button = mainActivity.findViewById(R.id.button4)
 
         button.setOnClickListener {
             val permissionCheck = ContextCompat.checkSelfPermission(
