@@ -37,7 +37,8 @@ class MainActivity : AppCompatActivity() {
                     tab.text = "홈"
                 }
                 1 -> {
-                    tab.text = "동행 페이지"
+                    tab.setIcon(R.drawable.tab_button_with_custum)
+//                    tab.text = "동행"
                 }
                 2 -> {
                     tab.text = "방명록"
